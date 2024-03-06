@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cv5tyr0a8wwlk"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_egmjm"]
+[ext_resource type="FontFile" uid="uid://dvoau6kkt2tp7" path="res://assets/Bonus/kenvector_future.ttf" id="2_tp1kh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_047ka"]
+font = ExtResource("2_tp1kh")
+font_size = 48
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_egmjm")
+
+[node name="Score" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "SCORE: 9999
+"
+label_settings = SubResource("LabelSettings_047ka")
+horizontal_alignment = 1
+vertical_alignment = 1
